@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- cabeçalho e estilos -->
+</head>
+<body>
+    <!-- conteúdo HTML -->
+    
+    <script>
+        // Obtém o parâmetro de URL para verificar se o usuário está logado
+        const params = new URLSearchParams(window.location.search);
+        const isLoggedIn = params.get("loggedin");
+
+        // Verifica se o usuário está logado
+        if (isLoggedIn === "true") {
+            // O usuário está logado, pode exibir o conteúdo da dashboard
+            console.log("Usuário logado na dashboard");
+        } else {
+            // O usuário não está logado, redireciona para a página de login
+            window.location.href = "https://masterdevhomirinha.github.io/robux/";
+        }
+    </script>
+</body>
+</html>
